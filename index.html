@@ -4,15 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/98f3024161.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <nav>
+      <nav id="nav">
         <div class="navLogo">
           <p>&lt;/WHAKEE&gt;</p>
         </div>
-        <div class="navItems">
+        <div class="navItems" id="navItems">
           <a href="#hero">_Home</a>
           <a href="#about">_About me</a>
           <a href="#skills">_My skills</a>
@@ -22,8 +26,18 @@
         <div class="navButton">
           <button>Download CV</button>
         </div>
-        <div class="hamburger">
-          <img src="images/Icon Button.png" alt="" />
+        <div>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="checkbox-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <span class="ball"></span>
+          </label>
+        </div>
+        <div class="hamburger" id="hamburger">
+         <span class="bar"></span>
+         <span class="bar"></span>
+         <span class="bar"></span>
         </div>
       </nav>
       <div class="heroSection" id="hero">
@@ -58,26 +72,23 @@
       <!-- PROFILE SECTION -->
       <div class="profileSection" id="about">
         <div class="profileSectionImage">
-         <img src="images/whakee port.png" alt="">
+          <img src="images/whakee port.png" alt="" />
         </div>
-        <div class="profileSectionText" >
+        <div class="profileSectionText">
           <div class="profileButton">
             <button>About Me</button>
           </div>
           <p>
-            I'm a passionate Developer, who specializes in full stack
-            development (React.js & Node.js). I am very enthusiastic about
-            bringing the technical and visual aspects of digital products to
-            life. User experience, pixel perfect design, and writing clear,
-            readable, highly performant code matters to me.
+            I'm a passionate Developer, who specializes in frontend
+            development.I am very enthusiastic about bringing the technical and
+            visual aspects of digital products to life. User experience, pixel
+            perfect design, and writing clear, readable, highly performant code
+            matters to me.
           </p>
           <p>
             I began my journey as a web developer in 2021, and since then, I've
             continued to grow and evolve as a developer, taking on new
-            challenges and learning the latest technologies along the way. I'm
-            building cutting-edge web applications using modern technologies
-            such as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much
-            more.
+            challenges and learning the latest technologies along the way.
           </p>
           <p>
             I am very much a progressive thinker and enjoy working on products
@@ -171,8 +182,12 @@
             <div></div>
             <div></div>
           </div>
-        </div
+        </div>
+        <footer>
+          <p>Uwakmfon Ekong 2023 @</p>
+        </footer>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

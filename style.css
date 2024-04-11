@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
@@ -35,6 +33,9 @@ nav a {
   text-decoration: none;
   padding-left: 1rem;
 }
+i{
+  color: white;
+}
 .navButton {
   display: inline-flex;
   padding: 0.25rem 1.25rem;
@@ -53,8 +54,19 @@ nav button {
 }
 .hamburger {
   display: none;
+  cursor: pointer;
 }
-/* medis queries for navbar */
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* media queries for navbar */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     width: 100%;
@@ -86,7 +98,7 @@ nav button {
   }
   nav {
     display: flex;
-    color: #fff;
+    /* color: #fff; */
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem 1rem 2rem;
@@ -95,6 +107,38 @@ nav button {
   }
   .hamburger {
     display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+   .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navItems{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #131418;
+    width: 80%;
+    text-align :center;
+    transition: 0.3s;
+    padding: 3rem;
+  }
+  .navItems a{
+    margin: 0.5rem;
+  }
+   .navItems a:hover{
+    text-decoration: underline white;
+    cursor: pointer;
+  }
+  .navItems.active{
+    left: 0;
   }
 }
 /* HERO SECTION */
@@ -234,13 +278,13 @@ nav button {
   display: flex;
   margin-top: 3rem;
   justify-content: space-between;
-  background: linear-gradient(
+  /* background: linear-gradient(
     95deg,
     #181920 21.54%,
     #070435 95.6%,
     #070435 97.07%,
     #070435 99.88%
-  );
+  ); */
   padding: 3rem;
 }
 .profileSection p {
@@ -334,7 +378,7 @@ nav button {
 /* SKILLS SECTION */
 .skillSection {
   padding: 1rem;
-  background: #131418;
+  /* background: #131418; */
 }
 .dottedCircles div {
   width: 10px;
@@ -390,6 +434,7 @@ nav button {
 .skillbottom {
   display: flex;
   justify-content: right;
+  padding-bottom: 1rem;
 }
 /* MEDIA QUERY FOR SKILLS(BIGGER SCREEN) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -425,6 +470,69 @@ nav button {
 }
 .skillbottom {
   display: flex;
-  justify-content: right;
+  justify-content: left;
+  padding-bottom: 1rem;
 }
 }
+/* FOOTER */
+footer{
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  background: #d223fd;
+  padding: 2rem;
+}
+
+/* copied */
+
+body.light, body.light nav,  body.light nav a{
+  background-color: #f6eaea;
+  color: #d223fd;
+} 
+body.light h3,body.light p{
+  color: #000;
+}
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+
+
+
+
+
+
+
