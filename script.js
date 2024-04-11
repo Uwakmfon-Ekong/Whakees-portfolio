@@ -11,3 +11,5 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navItems.classList.toggle("active");
 })
+
+AOS.init();

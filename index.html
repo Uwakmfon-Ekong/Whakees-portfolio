@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <script
       src="https://kit.fontawesome.com/98f3024161.js"
       crossorigin="anonymous"
@@ -35,9 +39,9 @@
           </label>
         </div>
         <div class="hamburger" id="hamburger">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
       <div class="heroSection" id="hero">
@@ -45,8 +49,8 @@
           Hi I’m Whakee, a special human with some ability to love learning and
           working on teamwork.
         </p>
-        <div class="bio">
-          <div class="bioImage">
+        <div class="bio" data-aos="fade-up">
+          <div class="bioImage" data-aos="fade-left" data-aos-delay="400">
             <div class="ellipse">
               <img src="images/Ellipse 1.svg" alt="" />
             </div>
@@ -58,7 +62,7 @@
               </p>
             </div>
           </div>
-          <div class="bio-text">
+          <div class="bio-text" data-aos="fade-left" data-aos-delay="400">
             <p>
               I'm a frontend developer (React.js & Vanilla.js) with a focus on
               creating (and occasionally designing) exceptional digital
@@ -70,11 +74,11 @@
         </div>
       </div>
       <!-- PROFILE SECTION -->
-      <div class="profileSection" id="about">
+      <div class="profileSection" id="about" data-aos="fade-left" data-aos-delay="400">
         <div class="profileSectionImage">
           <img src="images/whakee port.png" alt="" />
         </div>
-        <div class="profileSectionText">
+        <div class="profileSectionText" data-aos="fade-left">
           <div class="profileButton">
             <button>About Me</button>
           </div>
@@ -108,7 +112,7 @@
           </p>
         </div>
       </div>
-      <div class="skillSection" id="skills">
+      <div class="skillSection" id="skills" data-aos="fade-left" data-aos-delay="400">
         <div class="dottedCircles">
           <div></div>
           <div></div>
@@ -188,6 +192,7 @@
         </footer>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
