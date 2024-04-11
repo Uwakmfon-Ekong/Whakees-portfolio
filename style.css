@@ -1,0 +1,430 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+body {
+  background: #131418;
+  color: #fff;
+}
+nav {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 5rem;
+  border-bottom: 2px solid white;
+  top: 0;
+  position: sticky;
+  background: #131418;
+}
+.navLogo {
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+.navButton {
+  display: inline-flex;
+  padding: 0.25rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+nav button {
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
+}
+.hamburger {
+  display: none;
+}
+/* medis queries for navbar */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
+  .navItems {
+    display: none;
+  }
+  .navButton {
+    display: none;
+  }
+  nav {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 1rem 1rem 1rem;
+    border-bottom: 2px solid white;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navItems {
+    display: none;
+  }
+  .navButton {
+    display: none;
+  }
+  nav {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 1rem 2rem;
+    border-bottom: 2px solid white;
+    /* border: 1px solid red; */
+  }
+  .hamburger {
+    display: block;
+  }
+}
+/* HERO SECTION */
+.heroSection {
+  width: 100%;
+  /* border-bottom: 2px solid white; */
+}
+.firstP {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 2.5rem;
+  width: 100%;
+  padding: 3rem 11rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0.0625rem;
+  background: linear-gradient(107deg, #d223fd 40.33%, #5147ec 67.2%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 7rem;
+  gap: 5rem;
+}
+.bioImage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+}
+.bio span {
+  color: #d223fd;
+}
+.ellipse {
+  width: 50%;
+}
+.ellipse img {
+  width: 100%;
+}
+.bio-text {
+  width: 100%;
+}
+.ellipse-text p {
+  color: #d6d6d6;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.ellipse-text h3 {
+  margin-bottom: 30px;
+}
+.bio-text p {
+  color: #d1d5db;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* media queries for bio for bigger screen */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+  }
+  .heroSection {
+    width: 100%;
+    border-bottom: 2px solid white;
+  }
+  .firstP {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .bio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 0rem;
+  }
+  .bioImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .ellipse-text h3 {
+    text-align: center;
+  }
+  .ellipse-text p {
+    padding-bottom: 2rem;
+  }
+}
+/* MEDIA QUERIES FOR BIO (SMALLER SCREEN */
+@media screen and (max-width: 767px) {
+  .firstP {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-weight: 700;
+  }
+  .bio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 0rem;
+  }
+  .bioImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .ellipse-text h3 {
+    text-align: center;
+  }
+  .ellipse-text p {
+    padding-bottom: 2rem;
+  }
+}
+
+/* PROFILE SECTION */
+.profileSection {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+  background: linear-gradient(
+    95deg,
+    #181920 21.54%,
+    #070435 95.6%,
+    #070435 97.07%,
+    #070435 99.88%
+  );
+  padding: 3rem;
+}
+.profileSection p {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.profileSectionImage {
+  width: 100%;
+  max-width: 500px;
+  /* height: 100%; */
+  max-height: 500px;
+  /* gap: 12rem; */
+}
+.profileSectionImage img {
+  width: 80%;
+  height: 100%;
+}
+.profileSectionText {
+  width: 50%;
+}
+.profileSectionText a {
+  color: #fff;
+}
+.profileButton {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.profileSection button {
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
+}
+/* MEDIA QUERIES FOR ABOUT ME (BIGGER SCREEN) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .profileSection {
+    width: 100%;
+    margin-top: 0;
+    padding: 3rem;
+  }
+  .profileSectionImage {
+    width: 40%;
+    height: 100%;
+    padding-top: 7rem;
+  }
+  .profileSectionImage img {
+    width: 80%;
+    height: 80%;
+  }
+  .profileSectionText {
+    width: 60%;
+  }
+}
+/* MEDIA QUERIES FOR ABOUT ME (SMALLER SCREEN) */
+@media screen and (max-width: 767px) {
+  .profileSection {
+    width: 100%;
+    margin-top: 0;
+    flex-direction: column;
+    padding: 3rem;
+  }
+.profileSectionImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  max-height: 500px;
+}
+.profileSectionImage img {
+  width: 200px;
+  height: 200px;
+}
+.profileSectionText{
+  width: 100%;
+  padding-top: 2rem;
+}
+}
+
+/* SKILLS SECTION */
+.skillSection {
+  padding: 1rem;
+  background: #131418;
+}
+.dottedCircles div {
+  width: 10px;
+  height: 10px;
+  background: rgba(210, 35, 253, 1);
+  border-radius: 50%;
+}
+.dottedCircles {
+  width: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin-top: 1rem;
+}
+.myskills {
+  text-align: center;
+  font-family: Raleway;
+  line-height: 1.75rem;
+}
+.myskills span {
+  color: rgba(210, 35, 253, 1);
+}
+.myskills button {
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.theskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem 10rem;
+  gap: 20px;
+}
+.theskills img {
+  width: 100px;
+  height: 100px;
+}
+.cover {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #323131;
+  border-radius: 5px;
+}
+.skillbottom {
+  display: flex;
+  justify-content: right;
+}
+/* MEDIA QUERY FOR SKILLS(BIGGER SCREEN) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .skillSection {
+    width: 100%;
+}
+.theskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  padding: 2rem 5rem;
+  gap: 20px;
+}
+}
+/* MEDIA QUERIES FOR SKILLS(SMALLER SCREEN) */
+@media screen and (max-width: 767px) {
+  .skillSection{
+    width: 100%;
+  }
+  .theskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  gap: 10px;
+}
+.theskills img {
+  width: 50px;
+  height: 50px;
+}
+.cover {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.skillbottom {
+  display: flex;
+  justify-content: right;
+}
+}
