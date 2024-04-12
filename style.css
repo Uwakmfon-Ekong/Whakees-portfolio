@@ -23,6 +23,7 @@ nav {
   top: 0;
   position: sticky;
   background: #131418;
+  z-index: 2;
 }
 .navLogo {
   font-size: 1rem;
@@ -527,18 +528,154 @@ body.light h3,body.light p{
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
 }
+
+/* AOS TRANSITIONS */
 .bio {
-            transition: opacity 0.5s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
 
         .bioImage, .bio-text {
-            transition: transform 0.5s ease-in-out;
+            transition: transform 1s ease-in-out;
         }
 
 
+/* PROJECT SECTIONS */
+.projectSection{
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projectSection button{
+   border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.firstProject{
+  padding-top: 2rem;
+}
+.firstProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.firstProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.firstProjectText span{
+  color: greenyellow;
+}
+
+.secondProject{
+  padding-top: 3rem;
+}
+.secondProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.secondProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.secondProjectText span{
+  color: yellow;
+}
+
+.thirdProject{
+  padding-top: 3rem;
+}
+.thirdProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.thirdProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.thirdProjectText span{
+  color: green;
+}
+.fourthProject{
+  padding-top: 3rem;
+}
+.fourthProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.fourthProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.fourthProjectText span{
+  color: greenyellow;
+}
+.fifthProject{
+  padding-top: 3rem;
+}
+.fifthProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.fifthProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.fifthProjectText span{
+  color: greenyellow;
+}
 
 
+.sixthProject{
+  padding-top: 3rem;
+}
+.sixthProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.sixthProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.sixthProjectText span{
+  color: yellow;
+}
 
+.seventhProject{
+  padding: 3rem 0;
+}
+.seventhProjectImage img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.seventhProjectText{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.seventhProjectText span{
+  color: greenyellow;
+}
 
 
 
