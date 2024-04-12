@@ -8,10 +8,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/98f3024161.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <title>Document</title>
   </head>
   <body>
@@ -24,7 +38,7 @@
           <a href="#hero">_Home</a>
           <a href="#about">_About me</a>
           <a href="#skills">_My skills</a>
-          <a href="">_Projects</a>
+          <a href="#project">_Projects</a>
           <a href="">_Contact me</a>
         </div>
         <div class="navButton">
@@ -113,7 +127,7 @@
           </p>
           <p>
             One last thing, I'm available for freelance work, so feel free to
-            reach out and say <span style="color: #d223fd">Hello!</span>
+            reach out and say <span style="color: #d223fd"><a href="https://twitter.com/uwakmfonekong1">Hello</a></span>
           </p>
         </div>
       </div>
@@ -200,9 +214,9 @@
         </div>
         <!-- MY PROJECTS -->
         <div class="projectSection"  data-aos="fade-left"
-        data-aos-delay="400">
-          <button>My Projects</button>
-          <p>
+        data-aos-delay="400" id="project">
+          <button class="ProjectButton">My Projects</button>
+          <p class="wo">
             These are the projects I've worked on and some I'm still working on
           </p>
           <!-- firstproject -->
@@ -213,10 +227,10 @@
           </div>
           <div class="firstProjectText">
             <div>
-              <p>My portfolio websiite</p>
+              <p><a href="">My portfolio</a></p>
             </div>
             <div>
-              <p>Status: <span>Completed</span></p>
+              <p><span>Completed</span></p>
             </div>
           </div>
         </div>
@@ -228,10 +242,10 @@
           </div>
           <div class="secondProjectText">
             <div>
-              <p>Read-Vista, a reading web-app</p>
+              <p><a href="">Read-Vista</a></p>
             </div>
             <div>
-              <p>Status: <span>Just started</span></p>
+              <p><span>Just started</span></p>
             </div>
           </div>
         </div>
@@ -243,10 +257,10 @@
           </div>
           <div class="thirdProjectText">
             <div>
-              <p>Idee's portfolio, for a friend</p>
+              <p><a href="">Idee's portfolio</a></p>
             </div>
             <div>
-              <p>Status: <span>Almost done</span></p>
+              <p> <span>Almost done</span></p>
             </div>
           </div>
         </div>
@@ -258,7 +272,7 @@
           </div>
           <div class="fourthProjectText">
             <div>
-              <p>Food plaza,a food website</p>
+              <p><a href="">Food plaza</a></p>
             </div>
             <div>
               <p>Status: <span>Completed</span></p>
@@ -291,7 +305,7 @@
               <p>Vernsa,future of finances</p>
             </div>
             <div>
-              <p>Status: <span>in progress</span></p>
+              <p>Project <span> in progress</span></p>
             </div>
           </div>
         </div>
@@ -306,15 +320,26 @@
               <p>Arsha,for businesses</p>
             </div>
             <div>
-              <p>Status: <span>Completed</span></p>
+              <p>Project <span>Completed</span></p>
             </div>
           </div>
         </div>
-        <footer>
+
+     
+      </div>
+       <!-- Contact Me-->
+      <div class="contactSection">
+        <button>Contact me</button>
+        <p>You can contact me through the following</p>
+        
+      </div>
+
+       
+       <footer>
           <p>Uwakmfon Ekong 2023 @</p>
         </footer>
-      </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
   </body>

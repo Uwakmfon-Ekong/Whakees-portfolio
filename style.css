@@ -33,6 +33,10 @@ nav a {
   color: #fff;
   text-decoration: none;
   padding-left: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover{
+  color: #d223fd;
 }
 i{
   color: white;
@@ -83,7 +87,7 @@ nav button {
     color: #fff;
     justify-content: space-between;
     align-items: center;
-    padding: 8rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     border-bottom: 2px solid white;
   }
   .hamburger {
@@ -312,7 +316,7 @@ nav button {
   width: 50%;
 }
 .profileSectionText a {
-  color: #fff;
+  color: #d223fd;
 }
 .profileButton {
   display: flex;
@@ -320,6 +324,7 @@ nav button {
   /* justify-content: center; */
   align-items: center;
 }
+
 .profileSection button {
   border: none;
   border-radius: 0.75rem;
@@ -437,6 +442,9 @@ nav button {
   justify-content: right;
   padding-bottom: 1rem;
 }
+.wo{
+  text-align: center;
+}
 /* MEDIA QUERY FOR SKILLS(BIGGER SCREEN) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .skillSection {
@@ -482,6 +490,9 @@ footer{
   text-align: center;
   background: #d223fd;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* copied */
@@ -677,5 +688,42 @@ body.light h3,body.light p{
   color: greenyellow;
 }
 
+/* MEDIA QUERY FOR PROJECT(BIGGER SCREEN) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+ .firstProjectImage img, .secondProjectImage img, .thirdProjectImage img, .fourthProjectImage img, .fifthProjectImage img, .sixthProjectImage img, .seventhProjectImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
+}
+/* MEDIA QUERIES FOR PROJECTS(SMALLER SCREEN) */
+@media screen and (max-width: 767px) {
+ .firstProjectImage img, .secondProjectImage img, .thirdProjectImage img, .fourthProjectImage img, .fifthProjectImage img, .sixthProjectImage img, .seventhProjectImage img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+}
+/* CONTACT SECTION */
+.contactSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactSection p{
+  text-align: center;
+}
+.contactSection button{
+  border: none;
+  border-radius: 0.75rem;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
 
+}
