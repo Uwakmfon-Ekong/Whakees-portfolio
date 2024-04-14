@@ -183,7 +183,7 @@ nav button {
   font-weight: 500;
   line-height: 1.25rem;
   color: #fff;
-  padding: 5px 10px;
+  padding:8px 10px;
 }
 .bioImage {
   display: flex;
@@ -220,6 +220,7 @@ nav button {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+  padding-bottom:1rem;
 }
 
 /* media queries for bio for bigger screen */
