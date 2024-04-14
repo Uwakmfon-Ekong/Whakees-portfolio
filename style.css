@@ -343,6 +343,7 @@ nav button {
 .threediv{
   display: flex;
   justify-content: space-between;
+  padding:1rem 0
 }
 .threediv div{
   text-align: center;
