@@ -174,8 +174,16 @@ nav button {
   justify-content: space-between;
   padding: 2rem 7rem;
   gap: 5rem;
- 
- 
+}
+.bioButton{
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(93deg, #d223fd 7.2%, #5147ec 100%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #fff;
+  padding: 5px 10px;
 }
 .bioImage {
   display: flex;
