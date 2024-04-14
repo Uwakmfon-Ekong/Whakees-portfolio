@@ -310,14 +310,11 @@ nav button {
    overflow: hidden;
 }
 .profileSectionImage {
-  width: 100%;
-  max-width: 500px;
-  /* height: 100%; */
-  max-height: 500px;
-  /* gap: 12rem; */
+  width: 50%;
+ height: 100%;
 }
 .profileSectionImage img {
-  width: 80%;
+  width: 50%;
   height: 100%;
 }
 .profileSectionText {
@@ -342,6 +339,18 @@ nav button {
   line-height: 1.25rem;
   color: #fff;
   padding: 5px 10px;
+}
+.threediv{
+  display: flex;
+  justify-content: space-between;
+}
+.threediv div{
+  text-align: center;
+  
+}
+.one{
+  font-size: 30px;
+  font-weight: bolder;
 }
 /* MEDIA QUERIES FOR ABOUT ME (BIGGER SCREEN) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -370,7 +379,7 @@ nav button {
     width: 100%;
     margin-top: 0;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
   }
 .profileSectionImage {
   width: 100%;
@@ -762,9 +771,11 @@ body.light h3,body.light p{
   /* animation-delay: 1s; */
   animation-delay: calc(0.2s * var(--i));
 }
+
 .socialmedia a:hover {
   background: white;
   color: #1f242d;
   transform: translateY(-20%);
 }
+
 
